@@ -30,8 +30,8 @@
            ]
         ];
 
-        for($1=0; $i< count($partite); $i++){
-         echo ="{$partite[$1][casa]} -" ;
+        for($i=0; $i< count($partite); $i++){
+         echo ="{$partite[$i][casa]} -{$partite[$i]['ospiti']} | {$partite[$i]['casa-punti']} - {$partite[$i]['ospitePunti']} <br/>" ;
      };
     ?>
 </body>

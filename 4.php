@@ -17,22 +17,32 @@
 
     $students=[
         ['name'=>'Pippo', 'lastname'=>'Gialli', 'marks'=>[
-            'algebra'=> 21,
-            'inglese'=>22
+             21,
+             22
         ]],
         ['name'=>'Mimmo', 'lastname'=>'Bianchi', 'marks'=>[
-            'algebra'=> 25,
-            'inglese'=>26
+            25,
+            26
         ]],
         ];
         
+//    for($x=0; $x<count($students); $x++){
+//             echo array_sum($students[$x]['marks'] / count($students[x]['marks']));
+//         };
         
-         
-
+       
+     
         foreach($students as $student){
-            echo "{$student['name']}<br>"; 
-            echo $student['lastname'];
-            echo (array_sum($students[] / count($students);
+            echo "{$student['name']} "; 
+            echo "{$student['lastname']}<br>";
+            // echo  $student['marks'];
+            // $sum ='';
+            // $count=0;
+            // foreach($students as $value){
+            //     $sum +=$value['marks'];
+            //     $count++;
+            // }
+            // echo $sum/$count;
             
         }
     ?>
