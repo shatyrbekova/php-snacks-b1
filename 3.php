@@ -38,12 +38,12 @@
       foreach($posts as $value){
         
           foreach($value as $post){
-              print $post['title'];
-              print $post['author'];
-              print $post['text'];
+              print "{$post['title']}<br>";
+              print "{$post['author']}<br>";
+              print "{$post['text']}<br>";
           }
       };
-      var_dump($posts);
+    //   var_dump($posts);
 
     
     ?>

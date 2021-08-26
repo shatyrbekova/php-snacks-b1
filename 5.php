@@ -12,14 +12,34 @@ Suddividere il testo in tanti paragrafi <p>: ad ogni punto corrisponde un
 nuovo paragrafo. -->
 <?php
 
-$paragrafi='<p>PHP (acronimo ricorsivo di "PHP: Hypertext Preprocessor", preprocessore di ipertesti; originariamente acronimo di "Personal Home Page") 
-è un linguaggio di scripting interpretato, originariamente concepito per la programmazione di pagine web dinamiche. </p>:
-<p>L'interprete PHP è un software libero distribuito sotto la PHP License.</p>:
-<p>Attualmente è principalmente utilizzato per sviluppare applicazioni web lato server, ma può essere usato anche per scrivere script 
-a riga di comando o applicazioni stand-alone con interfaccia grafica. Un esempio di software scritto in PHP è MediaWiki,
- su cui si basano i progetti wiki della Wikimedia Foundation come Wikipedia.</p>:
-<p> Nato nel 1994 ad opera del danese Rasmus Lerdorf, PHP era in origine una raccolta di script CGI che permettevano una facile gestione delle pagine personali.</p>
- <p> Secondo l'annuncio originale di PHP 1.0 da parte dell'autore sul newsgroup comp.infosystems.www.authoring.cgi il significato originario dell'acronimo era Personal Home Page.</p>'
+$phrase = "Loro non sanno di che parlo.
+Voi siete sporchi, fra', di fango.
+Giallo di siga fra le dita.
+Io con la siga camminando.
+Scusami, ma ci credo tanto.
+Che posso fare questo salto.
+E anche se la strada è in salita.
+Per questo ora mi sto allenando.
+E buonasera, signore e signori, fuori gli attori.
+Vi conviene toccarvi i coglioni.
+Vi conviene stare zitti e buoni.
+Qui la gente è strana, tipo spacciatori.
+Troppe notti stavo chiuso fuori.
+Mo' li prendo a calci 'sti portoni.
+Sguardo in alto tipo scalatori.
+Quindi scusa mamma se sto sempre fuori, ma.
+Sono fuori di testa, ma diverso da loro.
+E tu sei fuori di testa, ma diversa da loro.
+Siamo fuori di testa, ma diversi da loro.
+Siamo fuori di testa, ma diversi da loro";
+ echo $phrase;
+
+$splitSentences = explode('.', $phrase);
+
+ for($x=0; $x<count($splitSentences); $x++){
+     echo "<p> {$splitSentences[$x]} </p>";
+ }
+  
 ?>
 </body>
 </html>

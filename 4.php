@@ -26,10 +26,13 @@
         ]],
         ];
         
+        
+         
 
         foreach($students as $student){
-            echo $student['name']; 
+            echo "{$student['name']}<br>"; 
             echo $student['lastname'];
+            echo (array_sum($students[] / count($students);
             
         }
     ?>
